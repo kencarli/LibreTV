@@ -44,13 +44,13 @@ function renderJavbusTags() {
     tagContainer.innerHTML = '';
 
     // 标签管理按钮
-    const manageBtn = document.createElement('button');
-    manageBtn.className = 'py-1.5 px-3.5 rounded text-sm font-medium transition-all duration-300 bg-[#1a1a1a] text-gray-300 hover:bg-pink-700 hover:text-white border border-[#333] hover:border-white';
-    manageBtn.innerHTML = '<span class="flex items-center"><svg class="w-3 h-3 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>管理</span>';
-    manageBtn.onclick = function() {
+    const javbusBtn = document.createElement('button');
+    javbusBtn.className = 'py-1.5 px-3.5 rounded text-sm font-medium transition-all duration-300 bg-[#1a1a1a] text-gray-300 hover:bg-pink-700 hover:text-white border border-[#333] hover:border-white';
+    javbusBtn.innerHTML = '<span class="flex items-center"><svg class="w-3 h-3 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>管理</span>';
+    javbusBtn.onclick = function() {
         showJavbusTagManageModal();
     };
-    tagContainer.appendChild(manageBtn);
+    tagContainer.appendChild(javbusBtn);
 
     // 渲染标签
     movieTags.forEach(tag => {
